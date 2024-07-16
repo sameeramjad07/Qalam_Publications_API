@@ -88,8 +88,8 @@ class PublicationsAPI(Resource):
             approved_filter.click()
             logging.info("Approved filter applied")
 
-            # Wait for 2 seconds to allow the page to update with the new data
-            time.sleep(2)
+            # Wait for 5 seconds to allow the page to update with the new data
+            time.sleep(5)
 
             # Wait for o_pager_limit to update after applying filter
             WebDriverWait(driver, 60).until(
@@ -171,8 +171,8 @@ class PublicationsAPI(Resource):
             apply_button.click()
             logging.info("Clicked 'Apply' button")
 
-            # Wait for 3 seconds to allow the page to update with the new data
-            time.sleep(3)
+            # Wait for 5 seconds to allow the page to update with the new data
+            time.sleep(5)
 
             logging.info("Waiting for the publication count to be visible")
             # Wait for the o_pager_limit to update
