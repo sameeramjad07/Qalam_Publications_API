@@ -3,3 +3,4 @@ flask-restful
 selenium
 python-dotenv
 chromedriver-autoinstaller
+gunicorn
